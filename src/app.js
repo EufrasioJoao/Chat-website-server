@@ -21,7 +21,7 @@ app.use(router); /* router */
 const server = http.createServer(app);
 const io = new Server(server, { /* instantiating new server with socket.io */
     cors: {
-        origin: ["http://localhost:3000", "*"],
+        origin: ["http://localhost:3000", "https://chat-web-application.netlify.app", "*"],
         methods: ["POST", "GET"],
     },
 });
