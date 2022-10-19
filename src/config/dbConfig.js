@@ -1,8 +1,8 @@
 const database_config = {
-    host: "sql11.freesqldatabase.com",
-    user: "sql11517731",
-    password: "AqLCJ3XHSa",
-    database: "sql11517731",
+    host: "34.67.149.103",
+    user: "norberto",
+    password: "norberto",
+    database: "eufrasiochatapp",
 };
 
 module.exports = database_config;
