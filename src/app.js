@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 app.use(router); /* router */
 
+app.use(function(req, res, next) {
+   res.header("Access-Control-Allow-Origin", "*");
+   next();
+ });
+
 //creating the server
 const server = http.createServer(app);
 const io = new Server(server, { /* instantiating new server with socket.io */
